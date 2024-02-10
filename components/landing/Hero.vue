@@ -1,9 +1,9 @@
 <template>
-  <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
-    <div class="p-24 md:order-1 hidden md:block">
+  <main class="grid lg:grid-cols-2 place-items-center md:pt-8">
+    <div class="md:p-24 md:order-1 mx-36">
       <img
-        class="rounded-full transition-transform transform hover:scale-125"
-        src="~/assets/img/hero.jpg"
+        class="rounded-full transition-transform transform hover:scale-120"
+        src="~/assets/img/man.jpg"
         alt="Starship starts the engine"
         loading="eager"
         format="avif"
@@ -12,29 +12,23 @@
       />
     </div>
 
-    <div>
+    <div class="p-10">
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-        Marketing website done with Nuxt
+        John Wick
       </h1>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        Nuxtship is a starter template for startups, marketing websites &
-        landing pages.<wbr /> Built with Nuxt & TailwindCSS. You can quickly
-        create any website with this starter.
+      <p class="text-lg mt-4 text-black max-w-xl">
+        I am a proficient software engineer with over 2 years of coding experience. Known for my dedication and hard work, I thrive in challenging environments and continuously strive for excellence. With a strong foundation in various programming languages and technologies, I am passionate about solving complex problems and delivering high-quality solutions. Read more <a href="/about" class="underline font-bold">about me</a> and explore <a href="/portfolio" class="underline font-bold">my projects</a>.
       </p>
-      <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <LandingLink
-          href="https://github.com/Gr33nW33n/nuxtship-template"
+
+      <div class="mt-6 flex flex-col sm:flex-row gap-3 text-gray-500">
+        <div
+          
+          >DevFolio developed by <a 
+          class="font-semibold text-red-700 italic"
+          href="https://github.com/paulmothapo"
           target="_blank"
           rel="noopener"
-          >Get Started</LandingLink
-        >
-        <LandingLink
-          size="lg"
-          styleName="outline"
-          rel="noopener"
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank"
-          >View Repo</LandingLink
+          >paulmothapo</a></div
         >
       </div>
     </div>

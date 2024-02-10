@@ -1,20 +1,21 @@
 <script setup>
 const menuitems = [
+ 
   {
-    title: "Features",
-    path: "#",
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
+    title: "Portfolio",
+    path: "/portfolio",
   },
   {
     title: "About",
     path: "/about",
   },
   {
-    title: "Contact",
+    title: "Contact me",
     path: "/contact",
+  },
+  {
+    title: "Resume",
+    path: "/resume",
   },
 ];
 
@@ -23,14 +24,14 @@ const open = ref(false);
 
 <template>
   <LandingContainer>
-    <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+    <header class="flex flex-col lg:flex-row justify-between items-center  p-6 md:px-24">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Nuxt</span
-          ><span class="text-slate-500">ship</span>
+        <a href="/" class="text-2xl"
+          ><span class="font-bold text-slate-800">Dev</span
+          ><span class="text-slate-500">Folio</span>
         </a>
         <div class="block lg:hidden">
-          <button @click="open = !open" class="text-gray-800">
+          <button @click="open = !open" class="text-black">
             <svg
               fill="currentColor"
               class="w-4 h-4"
@@ -61,25 +62,13 @@ const open = ref(false);
           <li v-for="item of menuitems">
             <a
               :href="item.path"
-              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+              class="transition-transform transform flex lg:px-3 py-2 text-black hover:text-white border-b-4 border-b-red-500 hover:bg-red-500 hover:rounded-full font-semibold text-lg"
             >
               {{ item.title }}
             </a>
           </li>
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
-          >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
-        </div>
       </nav>
-      <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
-        </div>
-      </div>
     </header>
   </LandingContainer>
 </template>
